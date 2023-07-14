@@ -20,8 +20,8 @@ export const create = async (req, res) => {
     return returnErrorMessage(res, errors.array());
   }
 
-  // const slug = req.body.title.toLowerCase().replaceAll(" ", "-");
-  const newNews = await News.create(req.body);
+  const slug = req.body.title.toLowerCase().replaceAll(" ", "-");
+  const newNews = await News.create({ ...req.body, slug });
 
   return res.status(201).json({ success: true, data: newNews });
 };
