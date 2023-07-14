@@ -82,7 +82,7 @@ export const update = async (req, res) => {
 
     await Review.findByIdAndUpdate(id, req.body);
 
-    return res.status(200).json({ success: true, data: "Update successful" });
+    return res.status(200).json({ success: true, data: "update successful" });
   } catch (error) {
     return returnErrorMessage(res, "invalid id");
   }
