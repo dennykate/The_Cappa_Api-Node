@@ -20,7 +20,7 @@ export const create = async (req, res) => {
     return returnErrorMessage(res, errors.array());
   }
 
-  const slug = req.body.title.replaceAll(" ", "-");
+  const slug = req.body.title.toLowerCase().split(" ").join("-");
   const newNews = await News.create({ ...req.body, slug });
 
   return res.status(201).json({ success: true, data: newNews });
