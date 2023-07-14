@@ -25,17 +25,17 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use("/admin", adminRoutes);
-app.use("/booking", checkAdmin, bookingRoutes);
-app.use("/leader", checkAdmin, leaderRoutes);
-app.use("/room", checkAdmin, roomRoutes);
-app.use("/guest", checkAdmin, guestRoutes);
-app.use("/concierge", checkAdmin, conciergeRoutes);
-app.use("/review", checkAdmin, reviewRoutes);
-app.use("/service", checkAdmin, serviceRoutes);
-app.use("/facility", checkAdmin, facilityRoutes);
-app.use("/menu", checkAdmin, menuRoutes);
-app.use("/news", checkAdmin, newsRoutes);
+app.use("/api/v1/admin", adminRoutes);
+app.use("/api/v1/booking", checkAdmin, bookingRoutes);
+app.use("/api/v1/leader", checkAdmin, leaderRoutes);
+app.use("/api/v1/room", checkAdmin, roomRoutes);
+app.use("/api/v1/guest", checkAdmin, guestRoutes);
+app.use("/api/v1/concierge", checkAdmin, conciergeRoutes);
+app.use("/api/v1/review", checkAdmin, reviewRoutes);
+app.use("/api/v1/service", checkAdmin, serviceRoutes);
+app.use("/api/v1/facility", checkAdmin, facilityRoutes);
+app.use("/api/v1/menu", checkAdmin, menuRoutes);
+app.use("/api/v1/news", checkAdmin, newsRoutes);
 
 app.get("/", (req, res) => {
   return res.status(200).json({ message: "server running" });
