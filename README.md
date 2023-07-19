@@ -9,21 +9,19 @@ Here is the hotel website https://the-cappa-luxury-hotel.vercel.app/
 
 ### Register
 
-$${\textColor{orange}Post}$$ `/admin/register`
+${\color{orange}Post}$ ` /admin/register`
 
     https://the-cappa-api.vercel.app/api/v1/admin/register
 
-#
+#### Body
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 2
-
-    []
-
+    {
+        "name": "Admin",
+        "email": "admin@gmail.com",
+        "password": "admin1234",
+        "password_confirmation": "admin1234"
+    }
+    
 ## Create a new Thing
 
 ### Request
