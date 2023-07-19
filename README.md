@@ -5,7 +5,7 @@ API.
 
 Here is the hotel website https://the-cappa-luxury-hotel.vercel.app/
 
-## Auth
+# Auth
 
 ### Register
 
@@ -37,7 +37,7 @@ ${\color{orange}Post}$ ` /admin/login`
 
 <----------------------------------------------------------->
 
-## Booking
+# Booking
 
 ### Create
 
@@ -62,19 +62,11 @@ ${\color{green}Get}$ ` /booking/all`
 
     https://the-cappa-api.vercel.app/api/v1/booking/all
 
-#### Query
-
-    page [ page for data ]
-
 ### Get 
 
 ${\color{green}Get}$ ` /booking/:id`
 
     https://the-cappa-api.vercel.app/api/v1/booking/:id
-
-#### Parameter
-
-    id [ id for booking ]
 
 ### Update 
 
@@ -82,16 +74,8 @@ ${\color{blue}Update}$ ` /booking/:id`
 
     https://the-cappa-api.vercel.app/api/v1/booking/:id
 
-#### Parameter
-
-    id [ id for booking ]
-
 ### Delete 
 
 ${\color{red}Delete}$ ` /booking/:id`
 
     https://the-cappa-api.vercel.app/api/v1/booking/:id
-
-#### Parameter
-
-    id [ id for booking ]
