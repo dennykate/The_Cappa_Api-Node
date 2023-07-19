@@ -79,3 +79,50 @@ ${\color{blue}Update}$ ` /booking/:id`
 ${\color{red}Delete}$ ` /booking/:id`
 
     https://the-cappa-api.vercel.app/api/v1/booking/:id
+
+<----------------------------------------------------------->
+
+# Leader
+
+### Create
+
+${\color{orange}Post}$ ` /leader/create`
+
+    https://the-cappa-api.vercel.app/api/v1/leader/create
+
+#### Body
+
+    {
+        'name': 'John Doe',
+        'image': 'https://images.pexels.com/photos/3760514/pexels-photo-3760514.jpeg',
+        'department': 'Financial',
+        'email': 'johndoe@gmail.com',
+        'instagram': 'https://www.instagram.com',
+        'twitter': 'https://www.twitter.com',
+        'facebook': 'https://www.facebook.com',
+        'pinterest': 'https://www.pinterest.com' 
+    }
+
+### Get All
+
+${\color{green}Get}$ ` /leader/all`
+
+    https://the-cappa-api.vercel.app/api/v1/leader/all
+
+### Get 
+
+${\color{green}Get}$ ` /leader/:id`
+
+    https://the-cappa-api.vercel.app/api/v1/leader/:id
+
+### Update 
+
+${\color{blue}Update}$ ` /leader/:id`
+
+    https://the-cappa-api.vercel.app/api/v1/leader/:id
+
+### Delete 
+
+${\color{red}Delete}$ ` /leader/:id`
+
+    https://the-cappa-api.vercel.app/api/v1/leader/:id
