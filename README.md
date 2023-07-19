@@ -5,35 +5,15 @@ API.
 
 Here is the hotel website https://the-cappa-luxury-hotel.vercel.app/
 
-## Install
+## Auth
 
-    bundle install
+### Register
 
-## Install
+`$${\color{orange}Post}$$`
 
-    bundle install
+   https://the-cappa-api.vercel.app/api/v1
 
-## Run the app
-
-    unicorn -p 7000
-
-## Run the tests
-
-    ./run-tests.sh
-
-# REST API
-
-The REST API to the example app is described below.
-
-## Get list of Things
-
-### Request
-
-`GET /thing/`
-
-    curl -i -H 'Accept: application/json' http://localhost:7000/thing/
-
-### Response
+#
 
     HTTP/1.1 200 OK
     Date: Thu, 24 Feb 2011 12:36:30 GMT
