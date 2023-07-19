@@ -1,17 +1,13 @@
-# REST API example application
+# Tha Cappa Api
 
-This is a bare-bones example of a Sinatra application providing a REST
-API to a DataMapper-backed model.
+This is a api of `The Cappa Luxury Hotel ` & providing a REST
+API.
 
-The entire application is contained within the `app.rb` file.
+Here is the hotel website https://the-cappa-luxury-hotel.vercel.app/
 
-`config.ru` is a minimal Rack configuration for unicorn.
+## Install
 
-`run-tests.sh` runs a simplistic test and generates the API
-documentation below.
-
-It uses `run-curl-tests.rb` which runs each command defined in
-`commands.yml`.
+    bundle install
 
 ## Install
 
@@ -240,7 +236,7 @@ The REST API to the example app is described below.
 
     {"id":1,"name":"Foo","status":"changed4"}
 
-## Change a Thing using the _method hack
+## Change a Thing using the \_method hack
 
 ### Request
 
@@ -259,7 +255,7 @@ The REST API to the example app is described below.
 
     {"id":1,"name":"Baz","status":"changed4"}
 
-## Change a Thing using the _method hack in the url
+## Change a Thing using the \_method hack in the url
 
 ### Request
 
@@ -292,7 +288,6 @@ The REST API to the example app is described below.
     Date: Thu, 24 Feb 2011 12:36:32 GMT
     Status: 204 No Content
     Connection: close
-
 
 ## Try to delete same Thing again
 
@@ -332,7 +327,7 @@ The REST API to the example app is described below.
 
     {"status":404,"reason":"Not found"}
 
-## Delete a Thing using the _method hack
+## Delete a Thing using the \_method hack
 
 ### Request
 
@@ -346,4 +341,3 @@ The REST API to the example app is described below.
     Date: Thu, 24 Feb 2011 12:36:33 GMT
     Status: 204 No Content
     Connection: close
-
