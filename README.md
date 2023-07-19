@@ -9,7 +9,7 @@ Here is the hotel website https://the-cappa-luxury-hotel.vercel.app/
 
 ### Register
 
-`\color{orange}Post /admin/register`
+$${\color{orange}Post}$$ `/admin/register`
 
     https://the-cappa-api.vercel.app/api/v1/admin/register
 
